@@ -1,4 +1,4 @@
-import datos from './data.js';
+gitimport datos from './data.js';
 
 let initialList = datos.allCards();
 let finalList = [];
@@ -15,11 +15,17 @@ function ordenardeaz() {
 }
 
 zToa.addEventListener("click", ordenardeza);
+
 function ordenardeza() {
+    console.log("yadaAAA");
+}
+const aToz = document.getElementById("az");
+aToz.addEventListener("click", ordenardeaz);
+
+function ordenardeza() 
    initialList.sort(datos.za)
    finalList = initialList;
    fillDashboard(finalList);
-}
 
 function clearDashboard() {
    while (dashboard.firstChild) {
@@ -74,7 +80,3 @@ window.onload = function allChamps() {
  <img src="https://www.masterypoints.com/assets/img/lol/champion_icons/Akali.png" alt="Akali build guides">
  <h5>Akali</h5>
 </div>*/
-
-
-
-  
