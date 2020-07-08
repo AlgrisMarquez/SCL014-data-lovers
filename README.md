@@ -1,14 +1,14 @@
 # Data Lovers
 
-## World League of legends
+# World League of legends
 
-* [A. Antecedentes] (#A-antecedentes)
-* [B. Nombre del Juego] (#B-nombre-del-juego)
-* [C. Planificación del proyecto] (#C-planificación-del-proyecto)
-* [D. Recolectando la información] (#D-recolectando-la-informacion)
-* [E. Diseñando ideas sobre la interfaz ]  (#-diseñando-ideas-sobre-la-interfaz)
-* [F. Historias de Usuarios] (#E-historia-de-usuarios)
-* [G. Testeo de Usabilidad] (#G-testeo-de-usabilidad) 
+* [A. Antecedentes] 
+* [B. Nombre del Juego] 
+* [C. Planificación del proyecto] 
+* [D. Recolectando la información] 
+* [E. Diseñando ideas sobre la interfaz ]  
+* [F. Historias de Usuarios]
+* [G. Testeo de Usabilidad] 
 
 ***
 ## A. ANTECEDENTES
@@ -40,15 +40,17 @@ como jugadores de League of Legends.
 
 ## Opiniones de Relacionados al Juego
 
-**Julio Gallardo, administrador de la comunidad Lolchile.cl**, explica que su masificación se debe 
+***Julio Gallardo, administrador de la comunidad Lolchile.cl***, explica que su masificación se debe 
 principalmente a dos cosas: no se necesita pagar para jugar y tampoco un computador demasiado 
-poderoso para que funcione. De hecho, LoL obtiene sus ganancias gracias a lo llamativo de los torneos, 
-que tienen auspiciadores como Coca Cola o Samsung, -…”
+poderoso para que funcione. 
 
-“Si a esto se suma su aspecto social, donde se puede compartir con amigos o completos desconocidos 
+Si a esto se suma su aspecto social, donde se puede compartir con amigos o completos desconocidos 
 ubicados al otro lado del mundo, es entendible su atractivo entre los adolescentes de 12 a 18 años 
-y los adultos jóvenes en sus tempranos 20, señala **Daniela Abarca, periodista de Copa Gamer.**
- "LoL es adictivo porque no es un juego difícil para alguien que recién entra en el mundo de los MOBAs.”
+y los adultos jóvenes en sus tempranos 20, señala ***Daniela Abarca, periodista de Copa Gamer.***
+
+>De hecho, LoL obtiene sus ganancias gracias a lo llamativo de los torneos, que tienen auspiciadores como Coca Cola o Samsung- -Julio Gallardo
+
+>LoL es adictivo porque no es un juego difícil para alguien que recién entra en el mundo de los MOBAs.--Daniela Abarca
 
 
 ## NOMBRE DEL PROYECTO
@@ -82,8 +84,7 @@ en un 100% o no permitiendo entonces tener un punto de partida en el siguiente d
 
 
 
-imagen y link del trello
-
+imagen y [link del trello] (https://trello.com/b/wwR1sXV1/proyecto-world-lol)
 
 
 
@@ -168,7 +169,7 @@ a los usuarios una experiencia mas cercana a lo que obtendrán una ves terminado
 Las propuestas fueron cambiando según nuestros usuarios iteraban con ellas. Dandole un backgraung diferente, Colocando el boton para acceder a los partidos de la liga en la parte superior derecha entre otros que se iran desarrollando con el paso de las Historias de usuario 
 
 
-Agregar link de prototype en invision
+Agregar [link de prototype en invision] (https://algrismarquez114595.invisionapp.com/public/share/ZW18K0DZVB#/screens/479079190)
 
 
 
