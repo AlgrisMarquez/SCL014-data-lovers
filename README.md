@@ -2,7 +2,8 @@
 
 ## World League of legends
 
-* [A. Resumen del proyecto](#A-resumen-del-proyecto)
+* [A. Antecedentes] (#A-antecedentes)
+* [A. Antecedentes] Resumen del proyecto](#A-resumen-del-proyecto)
 * [B. Organizacion](#B-organizacion)
 * [C. Diseño de la Interfaz de Usuario](#C-diseño-de-la-interfaz-de-usuario)
 * [D. Historia de Usuarios](#D-historia-de-usuarios)
