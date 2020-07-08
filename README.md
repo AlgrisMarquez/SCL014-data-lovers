@@ -3,43 +3,103 @@
 ## World League of legends
 
 * [A. Antecedentes] (#A-antecedentes)
-* [A. Antecedentes] Resumen del proyecto](#A-resumen-del-proyecto)
+* [B. Nombre del Juego] (#B-nombre-del-juego)
+* [C. Planificación del proyecto] (#C-planificación-del-proyecto)
+* [D. Recolectando la información] (#D-recolectando-la-informacion)
 * [B. Organizacion](#B-organizacion)
 * [C. Diseño de la Interfaz de Usuario](#C-diseño-de-la-interfaz-de-usuario)
 * [D. Historia de Usuarios](#D-historia-de-usuarios)
 
 
 ***
-## A. Resumen del proyecto
+## A. ANTECEDENTES
 
-Para este proyecto se contruyo una pagina WEB, que podran accesar los Jugadores y 
-usuarios de  **League of legends** que lo usan de manera regular, son apasionados 
-por los juego de estrategia como este que se juega en línea, es multijugador y los j
-ugadores pueden ser de fiferentes paises. 
+**League of Legends** (también conocido por sus siglas LoL) es un videojuego del género 
+multijugador de arena de batalla en línea (MOBA) el cual fue desarrollado por **Riot Games** 
+El juego está inspirado en el popular mapa personalizado del Warcraft III, Defense of 
+the Ancients: Allstars diseñado por **Steve «Guinsoo»** Feak el cual a su vez está basado 
+en el escenario de StarCraft «Aeon of Strife»
 
-En todos los modos de juego, los jugadores controlan personajes llamados **campeones**, 
-que son elegidos o asignados por sus habilidades únicas y se mantiene con este durante 
-toda la partida. 
+En octubre de 2012, contaba con 70 millones de jugadores registrados. Para marzo de 2013 
+se registró 5 millones de jugadores conectados al mismo tiempo en todo el mundo. Es un juego 
+de alta competitividad siendo uno de los juegos más populares de los deportes electrónicos(e-sports)
+*
+En septiembre del 2019 Riot Games revelaba que "cada día hay un pico de ocho millones de 
+jugadores en simultaneo en League, que hacen de League of Legends el juego de PC más grande 
+del mundo", y recientemente se realizó una **encuesta en Reddit** que culminó en un informe entre 
+otras cosas demográfico sobre estos jugadores, el cual reveló datos muy interesantes.
 
-Mostraremos a todos los campeones en una pantalla inicial y los jugadores y/o 
-usuarios podran seleccionar alguno segun ciertos criterios que fueron dados 
-las Historias de usuarios que nos permitiran desarrollar un producto que mejore
-su experiencia y les ayude a interactuar y entender mejor el juego y sus campeones.
 
-### B. Organizacion
 
-Se trabajo bajo la metodologia agil Scrum y se usara un tablero para definir los spring
-Los spring seran trabajados en periodos de 1 semana, pudiendose prolongar si fuera necesario
-Los Dailys permiten planificar los objetivos o tareas del trello para ese dia y al finalizar 
-la jornada se verifica si las mismas fueron alcanzadas en un 100% o no. Permitinedo entonces 
-tener un punto de partida en el siguiente daily.
+Imagen referencial a nivel mundial 2019
 
-### Recolectando la informacion
 
-Se elaboro un formulario para poder hacer el testeo incial del proyecto debido a las condiciones 
-actuales donde predomina la comunicacion en modo Remoto. En equipo se analizo la data arrojada, 
-elaborando los prototipos de baja fidelidad a mano alzada y con Balsamiq para mostrar a los 
-usuarios y recibir el primer feedback para crear con base las **Historias de Usuario**
+
+Profundizando un poco más en los detalles,un **75%** de los jugadores tienen menos de **25 años** y 
+el **78%** de ellos comenzaron a jugar antes de la **Season 6 (2016)**, y tienen entre 6 y 7 años 
+como jugadores de League of Legends. 
+
+## Opiniones de Relacionados al Juego
+
+**Julio Gallardo, administrador de la comunidad Lolchile.cl**, explica que su masificación se debe 
+principalmente a dos cosas: no se necesita pagar para jugar y tampoco un computador demasiado 
+poderoso para que funcione. De hecho, LoL obtiene sus ganancias gracias a lo llamativo de los torneos, 
+que tienen auspiciadores como Coca Cola o Samsung, -…”
+
+“Si a esto se suma su aspecto social, donde se puede compartir con amigos o completos desconocidos 
+ubicados al otro lado del mundo, es entendible su atractivo entre los adolescentes de 12 a 18 años 
+y los adultos jóvenes en sus tempranos 20, señala **Daniela Abarca, periodista de Copa Gamer.**
+ "LoL es adictivo porque no es un juego difícil para alguien que recién entra en el mundo de los MOBAs.”
+
+
+## NOMBRE DEL PROYECTO
+
+League of Legends tiene lugar en el mundo ficticio de Runaterra. Donde los **campeones** son una colección 
+de héroes y villanos que tienen una variedad de historias, adonde predomina la lucha entre los países 
+que la conforman para mantener el poderío. El juego consta de 3 modos actuales de juego en ejecución:
+**La Grieta del Invocador, El Abismo de los Lamentos y Teamfight Tactics,** por lo que la diversidad de 
+escenarios y personajes nos inspiraron para llamar a nuestra pagina 
+##**”World League of Legends”**
+
+
+## PLANIFICACIÓN DEL PROYECTO
+
+Se trabajo bajo la metodología ágil **Scrum** ya que nos permite la división del trabajo completo en 
+distintos apartados o bloques, que se abordan en periodos corto de tiempo desde 1 hasta 3 semanas como es 
+el caso de este proyecto). Seleccionamos esta metodología ya que fomenta la motivación y el compromiso del 
+equipo, permitiendo una mayor productividad así como el desglose del trabajo favorece a que las necesidades
+del cliente permitiéndole ver los avances de tareas terminadas. 
+Permitiendo que las evoluciones del mercado se analizen e integren a las tareas en menor tiempo. Otro atributo 
+que favorece su aplicación en este proyecto es la posibilidad de flexibilidad y la reducción de tiempos que 
+permiten cumplir las expectativas previstas en las Historias de Usuarios.
+
+Otra herramienta que usaremos sera un tablero para definir los spring, en este caso el **Trello** porque es una 
+aplicación para manejo de proyectos, en la cual puedes tener múltiples organizaciones, tableros, listas y tarjetas, 
+donde todos pueden colaborar para lograr los objetivos siguiendo un proceso bastante visual.
+
+Los spring serán trabajados en periodos de 1 semana, pudiéndose prolongar si fuera necesario y los Dailys permiten 
+planificar los objetivos o tareas para ese día, al finalizar la jornada se verifica si las mismas fueron alcanzadas 
+en un 100% o no permitiendo entonces tener un punto de partida en el siguiente daily.
+
+
+
+imagen y link del trello
+
+
+
+
+## RECOLECTANDO LA INFORMACIÓN
+
+Se elaboro un formulario para poder hacer el testeo inicial del proyecto debido a las condiciones actuales donde 
+predomina la comunicación en modo Remoto. A fin de determinar los requerimientos de nuestro target o  grupo de 
+usuarios a quien sera dirigida la aplicación
+
+Resumiendo la data obtenida
+* ¿Quiénes son los principales usuarios de productos?
+Nuestros Usuarios son jugadores entre 20 y 40 años, que usan el juego de manera periódica y buscan subir de niveles en cada encuentro, les motiva mucho las competencia internacional o juegos de la liga y quieren estar actualizados constantemente las mejoras de sus campeones favoritos
+
+
+P
 
 Resumiendo la data obtenida
 * ¿Quiénes son los principales usuarios de productogt
