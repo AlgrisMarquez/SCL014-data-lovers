@@ -6,10 +6,9 @@
 * [B. Nombre del Juego] (#B-nombre-del-juego)
 * [C. Planificación del proyecto] (#C-planificación-del-proyecto)
 * [D. Recolectando la información] (#D-recolectando-la-informacion)
-* [B. Organizacion](#B-organizacion)
-* [C. Diseño de la Interfaz de Usuario](#C-diseño-de-la-interfaz-de-usuario)
-* [D. Historia de Usuarios](#D-historia-de-usuarios)
-
+* [E. Diseñando ideas sobre la interfaz ]  (#-diseñando-ideas-sobre-la-interfaz)
+* [F. Historias de Usuarios] (#E-historia-de-usuarios)
+* [G. Testeo de Usabilidad] (#G-testeo-de-usabilidad) 
 
 ***
 ## A. ANTECEDENTES
@@ -92,81 +91,156 @@ imagen y link del trello
 
 Se elaboro un formulario para poder hacer el testeo inicial del proyecto debido a las condiciones actuales donde 
 predomina la comunicación en modo Remoto. A fin de determinar los requerimientos de nuestro target o  grupo de 
-usuarios a quien sera dirigida la aplicación
+usuarios a quien sera dirigida la aplicación.
 
-Resumiendo la data obtenida
+
+
+imagen de la encuesta
+
+
+
+##Resumiendo la data obtenida
+
 * ¿Quiénes son los principales usuarios de productos?
-Nuestros Usuarios son jugadores entre 20 y 40 años, que usan el juego de manera periódica y buscan subir de niveles en cada encuentro, les motiva mucho las competencia internacional o juegos de la liga y quieren estar actualizados constantemente las mejoras de sus campeones favoritos
+Nuestros Usuarios son jugadores entre 20 y 40 años, que usan el juego de manera periódica y buscan subir de niveles
+ en cada encuentro, les motiva mucho las competencia internacional o juegos de la liga y quieren estar actualizados 
+ constantemente las mejoras de sus campeones favoritos
 
 
-P
+Imagen de Edad y Frecuencia
 
-Resumiendo la data obtenida
-* ¿Quiénes son los principales usuarios de productogt
-Nuestros Usuarios son jugadores entre 18 y 40 años, que usan el juego de manera periodica y buscan 
-subir de niveles en cada encuentro, les motiva mucho las competencia internacional o juegos de la liga
-y quieren estar actualizados constamentede las mejoras de sus campeones favoritos
 
-* ¿Cuáles son los objetivos de nuestros estos usuarios para  con el producto?
-Mantenerse actualizados con respecto a las mejoras de sus campeones y los enventos internacionales
+* ¿Cuáles son los objetivos de nuestros estos usuarios para con el producto?
+Mantenerse actualizados a los jugadores frecuentes con respecto a las mejoras de sus campeones y los eventos internacionales
 
 * ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
-Los ususarios indicaron que les gustaria ver una vista de todos los juegadores en la pantalla, asi como
-la posibilidad de visualizar de manera independiente a su jugador favorito y lese le muestre los datos 
-mas relevants del mismo como: su nombre oficial, rol, dificultad, reseña del personaje entre otros
-Con respeto a la grafica, pidieron que fuera lo mas similar a los del juego en si, donde predominan los 
-tonos oscuros de azul, morado y negro
+Los usuarios indicaron que les gustaría ver :
+Una vista de todos los jugadores en la pantalla
+Visualizar de manera independiente a su jugador favorito mostrandole datos mas relevantes del mismo como: su nombre oficial,
+rol, dificultad, reseña del personaje entre otros
+Agrupar a los campeones por roles, dificultad, magia, ataque entre otros
 
 
-### C. Diseño de la Interfaz de Usuario
+Imagen de orden y roles
 
-#### Prototipo de baja fidelidad
 
-Bocetos (_sketches_) de tu a mano alzada y balsamiq 
+Con respeto a la grafica, los usuarios indicaron que fuera lo mas similar a la del juego en si, donde predominan los tonos 
+oscuros de azul, morado y negro
 
-Agregar fotos
 
-#### Prototipo de alta fidelidad
+imagen de la guia de estilos
 
-Prototipo Alta Fidelidad  
-"tu diseño debe seguir los fundamentos de _visual design_."  Revisar pendiente mejorar
 
-Agregar link de prototype
 
-#### Testeos de usabilidad
+## DISEÑANDO IDEAS SOBRE LA INTERFAZ
+
+Comenzamos realizando los _sketches_ para la aplicación de la web que desarrollaremos utilizando papel y lápiz, esquematizando 
+a mano alzada la manera en que consideramos mas eficiente su distribución, ¿como se puede manejar el usuario con el diseño?, botones y otras opciones de pantallas que mejoren la experiencia del usuario con la pagina en si y la navegación en la misma. 
+Esta representación es solo el inicio, la misma puede sufrir cambios una ves que los usuarios nos den su iteración sobre ellos
+
+* Bocetos a Mano alzada
+
+
+imagen de boccetos a mano alzada (3)
+
+
+
+* Prototipo de baja fidelidad
+Una vez realizado nuestros sketches, pasamos a plasmarlo en la aplicación invision para digitalizar nuestro wireframe y diseñar 
+un mockup, pasaremos a hacer el primer testeo con usuarios.
+Este prototipo a mano alzada fue trabajado en  una aplicación llamada Balsamiq que nos da una visión  mas cercana al esquema 
+que queremos ver en nuestro producto final y con ella iteramos nuevamente con nuestros usuarios.
+
+
+imagen de bocetos de baja fidelidad Balsamiq (3)
+
+
+En este primer prototipo, quisimos que  nuestra pantalla de inicio mostrase el nombre de la aplicación, un menú donde se 
+muestran las opciones para la búsqueda, filtrado y orden de los datos. En Body mostraremos a los campeones en tarjetas pequeñas con solo su imagen y nombre. Para mostrar los datos individuales se hará mediante una tarjeta o ventana modal que desplegara 
+la información de los campeones. Al pie de nuestra aplicación el usuario tendrá la posibilidad de ver los juegos de la liga o visitar otros foros de jugadores mas experimentados para compartir experiencias trucos etc
+
+
+
+* Prototipo de alta fidelidad
+El prototipo de alta fidelidad se hizo con la combinación de Canvas para llevar los sketches a una versión mas cercana a lo
+que buscamos plasmar en nuestra aplicación Web. Con el invision aplicamos la interacción de las imágenes  y poder brindarle 
+a los usuarios una experiencia mas cercana a lo que obtendrán una ves terminado este proyecto. 
+Las propuestas fueron cambiando según nuestros usuarios iteraban con ellas. Dandole un backgraung diferente, Colocando el boton para acceder a los partidos de la liga en la parte superior derecha entre otros que se iran desarrollando con el paso de las Historias de usuario 
+
+
+Agregar link de prototype en invision
+
+
+
+
+## HISTORIAS DE USUARIOS
+Las historias de usuario conforman la parte central de muchas metodologías de desarrollo ágil, Estas definen lo que se debe construir en el proyecto de software, tienen una prioridad asociada definida por el cliente de manera de indicar cuales son 
+las mas importantes para el resultado final, serán divididas en tareas y su tiempo será estimado por los desarrolladores. Partiendo de este concepto, nuestras historias de usuarios son las siguientes:
+
+**Historia N° 1**
+**28 años. Hombre, Yo como jugador frecuente quiero ordenar a los campeones de la A-Z y viceversa.**
+
+“...información de los campeones y tips particulares para el campeón...”
+
+*Criterios de aceptación*
+- Visualizar la lista de campeones por nombre
+- Crear la barra o menú de filtrado
+- Funcionalidad en el producto, javascript y funciones correctas
+- Visualizar los campeones A-Z y de la Z-A
+
+*Definición de terminado*
+Al ingresar a la página el usuario podrá encontrarse con todos los campeones de la data LOL. Cumple con la guía de estilos definida. Está en el repositorio de Github. 
+
+Imagen de la aplicacion segun HU1
+
+
+**Historia N° 2**
+**22 años. Hombre, Yo como jugador frecuente quiero filtrar la lista de campeones para identificarlos por sus roles o dificultad.**
+
+“..info de los diferentes champios, roles, dificultad y tips generales”
+
+**Criterios de aceptación**
+- Correcta funcionalidad de filtro para los roles y dificultad
+- Impresión en la pantalla por cada filtro
+- Desarrollo del HTML, CSS responsivo 
+
+**Definición de terminado**
+Al ingresar a la página el usuario puede posicionarse en el menú y seleccionar la categoría a filtrar, se desplegara en 
+pantalla los campeones según la selección del filtros solicitada. Cumple con la guía de estilos definida. 
+Está en el repositorio de Github. 
+
+Imagen de la aplicacion segun HU1
+
+**Historia N° 3**
+**40 años. Mujer, Yo como jugador quisiera seleccionar al jugador de manera individual y ver toda la información sobre el**
+
+“..Ver información detallada el los campeones de manera individual”
+
+**Criterios de aceptación**
+- Correcta funcionalidad de búsqueda del campeón
+- Impresión en la pantalla del campeón y su datos principales
+- Desarrollo del HTML, CSS responsivo  
+
+**Definición de terminado**
+Al ingresar a la página el usuario puede posicionarse en el campo de búsqueda e introducir el nombre del campeón, se realiza la búsqueda y se desplegara en pantalla con el campeones solicitado. Cumple con la guía de estilos definida. Está en el repositorio de Github.
+
+
+
+#### TESTEO DE USABILIDAD 
+
+PENDIDENTE PARA DESARROLLAR CON LAS 1ERA HISTORIA
+
+Durante el reto deberás hacer _tests_ de usabilidad con distintos usuarios, y
+en base a los resultados, deberás iterar tus diseños. Cuéntanos
+qué problemas de usabilidad detectaste a través de los _tests_ y cómo los
+mejoraste en tu propuesta final.
+
+ * Feedback de los usuarios
 
 PENDIDENTE PARA DEARROLLAR CON LAS 1ERA HISTORIA
 
-Durante el reto deberás hacer _tests_ de usabilidad con distintos usuarios, y
-en base a los resultados, deberás iterar tus diseños. Cuéntanos
-qué problemas de usabilidad detectaste a través de los _tests_ y cómo los
-mejoraste en tu propuesta final.
 
- ### D. Historias de usuario
-
-Una vez que entiendas las necesidades de tus usuarios, escribe las [Historias
-de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
-todo lo que el usuario necesita hacer/ver. Las **Historias de Usuario** deben
-ser el resultado de tu proceso de investigación o _research_ de tus usuarios.
-
-Asegúrate de incluir la definición de terminado (_definition of done_) y los
-Criterios de Aceptación para cada una.
-
-En la medida de lo posible, termina una historia de usuario antes de pasar
-a la siguiente (Cumple con Definición de Terminado + Criterios de Aceptación).
-
-
-#### Testeos de usabilidad
-
-Durante el reto deberás hacer _tests_ de usabilidad con distintos usuarios, y
-en base a los resultados, deberás iterar tus diseños. Cuéntanos
-qué problemas de usabilidad detectaste a través de los _tests_ y cómo los
-mejoraste en tu propuesta final.
-
-
-
-
-## 3. Objetivos de aprendizaje
+## OBJETIVOS DE APRENDIZAJE 
 
 El objetivo principal de este proyecto es que, entendiendo las necesidades de
 tus usuarios, aprendas a diseñar y construir una interfaz web donde se pueda
