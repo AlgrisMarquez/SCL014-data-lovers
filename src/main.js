@@ -31,7 +31,7 @@ const alldificult = document.getElementById("all");
 const dashboard = document.getElementById("dashboard");
 
 function joinedFilter() {
-    
+
     let alfabeticvalue = orderlabel.innerHTML;
     let rolevalue = roleOrder.innerHTML;
     let dificultvalue = dificultlabel.innerHTML;
@@ -41,7 +41,7 @@ function joinedFilter() {
 
     let rolelist = [];
     rolelist = datos.filterbyRole(alfabeticlist, rolevalue);
-    
+
     let dificultList = [];
     dificultList = datos.filterbyDificult(rolelist, dificultvalue);
     fillDashboard(dificultList);
@@ -49,42 +49,50 @@ function joinedFilter() {
 
 
 buscardor.addEventListener('keyup', findName);
+
 function findName() {
     let stringName = buscardor.value;
+    let finalList = [];
     finalList = initialList.filter(champ => champ.name.toLowerCase().includes(stringName.toLowerCase()));
-    console.log(finalList);
+    //console.log(finalList);
     fillDashboard(finalList);
 }
 
 aToz.addEventListener("click", ordenardeaz);
+
 function ordenardeaz() {
     orderlabel.innerHTML = "Ordenar: A-Z";
     joinedFilter()
 }
 zToa.addEventListener("click", ordenardeza);
+
 function ordenardeza() {
     orderlabel.innerHTML = "Ordenar: Z-A";
     joinedFilter()
 }
 
 allrole.addEventListener("click", rolefilterall);
+
 function rolefilterall() {
     roleOrder.innerHTML = "Todos los Roles";
     joinedFilter()
 }
 alldificult.addEventListener("click", dificultfiltertodos);
+
 function dificultfiltertodos() {
     dificultlabel.innerHTML = "Todas las Dificultades";
     joinedFilter()
 }
 
 tankfilter.addEventListener("click", rolefiltertank);
+
 function rolefiltertank() {
     roleOrder.innerHTML = "Tank";
     joinedFilter()
 }
 
 fightfilter.addEventListener("click", rolefilterfighter);
+
 function rolefilterfighter() {
     roleOrder.innerHTML = "Fighter";
     joinedFilter();
@@ -92,12 +100,14 @@ function rolefilterfighter() {
 
 
 supportfilter.addEventListener("click", rolefiltersupport);
+
 function rolefiltersupport() {
     roleOrder.innerHTML = "Support";
     joinedFilter();
 }
 
 magefilter.addEventListener("click", rolefiltermage);
+
 function rolefiltermage() {
     roleOrder.innerHTML = "Mage";
     joinedFilter();
@@ -105,6 +115,7 @@ function rolefiltermage() {
 }
 
 assasinfilter.addEventListener("click", rolefilterassasin);
+
 function rolefilterassasin() {
     roleOrder.innerHTML = "Assassin";
     joinedFilter();
@@ -112,12 +123,14 @@ function rolefilterassasin() {
 }
 
 marksmanfilter.addEventListener("click", rolefiltermarksman);
+
 function rolefiltermarksman() {
     roleOrder.innerHTML = "Marksman";
     joinedFilter();
 }
 
 hardfilter.addEventListener("click", dificultfilterHard);
+
 function dificultfilterHard() {
     dificultlabel.innerHTML = "Dificultad: Hard";
     joinedFilter();
@@ -125,6 +138,7 @@ function dificultfilterHard() {
 
 
 averagefilter.addEventListener("click", dificultfilterAverage);
+
 function dificultfilterAverage() {
     dificultlabel.innerHTML = "Dificultad: Average";
     joinedFilter();
@@ -132,6 +146,7 @@ function dificultfilterAverage() {
 
 
 easyfilter.addEventListener("click", dificultfilterEasy);
+
 function dificultfilterEasy() {
     dificultlabel.innerHTML = "Dificultad: Easy";
     joinedFilter();

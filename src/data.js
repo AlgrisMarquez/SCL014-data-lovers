@@ -29,38 +29,37 @@ const datos = {
     filterbyRole: (list, rolevalue) => {
         let rolelist = [];
         if (rolevalue == "Todos los Roles") {
-            return rolelist = list;
+            rolelist = list;
         } else {
-            return rolelist = list.filter(champ => champ.tags.includes(rolevalue));
+            rolelist = list.filter(champ => champ.tags.includes(rolevalue));
+            return rolelist;
         }
     },
 
-    filterbyDificult: (list, dificultvalue) =>{
-    let dificultlist = [];
-    if (dificultvalue == "Todas las Dificultades") {
-        dificultlist = list;
-    } else if (dificultvalue == "Dificultad: Easy") {
-        dificultlist = list.filter(champ => champ.difficulty < 4);
-    } else if (dificultvalue == "Dificultad: Average") {
-        dificultlist = list.filter(champ => champ.difficulty >= 4 && champ.difficulty <= 6);
-    } else {
-        dificultlist = list.filter(champ => champ.difficulty >= 7);
-    }
-    return dificultlist;
-},
-sortAlfabeticaly: (list, alfabeticvalue,) => {
-    let alfabeticlist = []
-if (alfabeticvalue == "Ordenar: A-Z") {
-    return alfabeticlist = list.sort(datos.az);
-}
-else { 
-    return alfabeticlist = list.sort(datos.za);}
-},
+    filterbyDificult: (list, dificultvalue) => {
+        let dificultlist = [];
+        if (dificultvalue == "Todas las Dificultades") {
+            dificultlist = list;
+        } else if (dificultvalue == "Dificultad: Easy") {
+            dificultlist = list.filter(champ => champ.difficulty < 4);
+        } else if (dificultvalue == "Dificultad: Average") {
+            dificultlist = list.filter(champ => champ.difficulty >= 4 && champ.difficulty <= 6);
+        } else {
+            dificultlist = list.filter(champ => champ.difficulty >= 7);
+        }
+        return dificultlist;
+    },
+    sortAlfabeticaly: (list, alfabeticvalue, ) => {
+        let alfabeticlist = []
+        if (alfabeticvalue == "Ordenar: A-Z") {
+            alfabeticlist = list.sort(datos.az);
+        } else {
+            alfabeticlist = list.sort(datos.za);
+        }
+        return alfabeticlist;
+    },
 
 
 }
-
-
 
 export default datos;
-

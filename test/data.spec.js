@@ -1,76 +1,68 @@
-import { datos } from '../src/data.js';
+import datos from '../src/data.js';
+let list = [
+    { name: "Aatrox", image: "https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png", difficulty: 3, tags: ["Fighter", "Tank"] },
+    { name: "Ahri", image: "https://www.masterypoints.com/assets/img/lol/champion_icons/Ahri.png", difficulty: 5, tags: ["Mage", "Assassin"] },
+    { name: "Akali", image: "https://www.masterypoints.com/assets/img/lol/champion_icons/Akali.png", difficulty: 7, tags: ["Assassin"] }
+];
 
 describe('datos', () => {
-    it('is a function', () => {
-        expect(typeof datos).toBe('function');
+    test('debería ser un objeto', () => {
+        expect(typeof datos).toBe('object');
     });
 
-    const camp = [{
-        "Aatrox": {
-            "version": "6.24.1",
-            "id": "Aatrox",
-            "key": "266",
-            "name": "Aatrox",
-            "title": "the Darkin Blade",
-            "img": "https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png",
-            "splash": "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg",
-            "blurb": "Aatrox is a legendary warrior, one of only five that remain of an ancient race known as the Darkin. He wields his massive blade with grace and poise, slicing through legions in a style that is hypnotic to behold. With each foe felled, Aatrox's ...",
-            "info": {
-                "attack": 8,
-                "defense": 4,
-                "magic": 3,
-                "difficulty": 4
-            },
-            "image": {
-                "full": "Aatrox.png",
-                "sprite": "champion0.png",
-                "group": "champion",
-                "x": 0,
-                "y": 0,
-                "w": 48,
-                "h": 48
-            },
-            "tags": [
-                "Fighter",
-                "Tank"
-            ],
-            "partype": "BloodWell",
-            "stats": {
-                "hp": 537.8,
-                "hpperlevel": 85,
-                "mp": 105.6,
-                "mpperlevel": 45,
-                "movespeed": 345,
-                "armor": 24.384,
-                "armorperlevel": 3.8,
-                "spellblock": 32.1,
-                "spellblockperlevel": 1.25,
-                "attackrange": 150,
-                "hpregen": 6.59,
-                "hpregenperlevel": 0.5,
-                "mpregen": 0,
-                "mpregenperlevel": 0,
-                "crit": 0,
-                "critperlevel": 0,
-                "attackdamage": 60.376,
-                "attackdamageperlevel": 3.2,
-                "attackspeedoffset": -0.04,
-                "attackspeedperlevel": 3
-            }
-        };
-    }, ];
+    // Test para los roles
+    describe('datos.filterbyRole', () => {
+            test('debería ser una función', () => {
+                expect(typeof datos.filterbyRole).toBe('function');
+            });
 
-    it('returns `datos`', () => {
-        expect(datos(camp)).toBe(name = "Aatrox", img = "https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png", tags = ["Fighter", "Tank"]);
-    });
-});
+            test('debería retornar lista filtrada por Fighter"', () => {
+                expect(datos.filterbyRole(list, "Fighter") === [{ name: "Aatrox", image: "https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png", difficulty: 4, tags: ["Fighter", "Tank"] }]);
+            });
 
-describe('anotherExample', () => {
-    it('is a function', () => {
-        expect(typeof anotherExample).toBe('function');
-    });
+            test('debería retornar lista original"', () => {
+                expect(datos.filterbyRole(list, "Todos los Roles") === list);
+            });
 
-    it('returns `anotherExample`', () => {
-        expect(anotherExample()).toBe('OMG');
-    });
+        }),
+        // Test para los dificultad
+        describe('datos.filterbyDificult', () => {
+            test('debería ser una función', () => {
+                expect(typeof datos.filterbyDificult).toBe('function');
+            });
+
+            test('debería retornar lista filtrada por Easy"', () => {
+                expect(datos.filterbyDificult(list, "Dificultad: Easy") === [{ name: "Aatrox", image: "https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png", difficulty: 4, tags: ["Fighter", "Tank"] }]);
+            });
+
+            test('debería retornar lista filtrada por Average"', () => {
+                expect(datos.filterbyDificult(list, "Dificultad: Average") === [{ name: "Ahri", image: "https://www.masterypoints.com/assets/img/lol/champion_icons/Ahri.png", difficulty: 5, tags: ["Mage", "Assassin"] }]);
+            });
+
+            test('debería retornar lista filtrada por Hard"', () => {
+                expect(datos.filterbyDificult(list, "Dificultad: Hard") === [{ name: "Akali", image: "https://www.masterypoints.com/assets/img/lol/champion_icons/Akali.png", difficulty: 7, tags: ["Assassin"] }]);
+            });
+
+            test('debería retornar lista original"', () => {
+                expect(datos.filterbyDificult(list, "Todas las Dificultades") === list);
+            });
+
+        }),
+
+        // Test para los orden alfabetico  
+        describe('datos.sortAlfabeticaly', () => {
+            test('debería ser una función', () => {
+                expect(typeof datos.sortAlfabeticaly).toBe('function');
+            });
+
+            test('debería retornar lista filtrada por Easy"', () => {
+                expect(datos.sortAlfabeticaly(list, "Ordenar: A-Z") === list);
+            });
+
+            test('debería retornar lista filtrada por Average"', () => {
+                expect(datos.filterbyDificult(list, "Ordenar: Z-A") === list);
+            });
+
+        });
+
 });
