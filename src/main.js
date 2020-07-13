@@ -1,4 +1,5 @@
 import datos from './data.js';
+import { loadOptions } from '@babel/core';
 
 let initialList = datos.allCards();
 
@@ -27,11 +28,15 @@ const easyfilter = document.getElementById('easy');
 const averagefilter = document.getElementById('average');
 const hardfilter = document.getElementById('hard');
 const alldificult = document.getElementById('all');
+
 //Elemento para imprimir cajitas
 const dashboard = document.getElementById('dashboard');
 
+//Elemento para ir a la liga
+const buttonliga = document.getElementById('botonliga');
+
 function joinedFilter() {
-    
+
     let alfabeticvalue = orderlabel.innerHTML;
     let rolevalue = roleOrder.innerHTML;
     let dificultvalue = dificultlabel.innerHTML;
@@ -41,7 +46,7 @@ function joinedFilter() {
 
     let rolelist = [];
     rolelist = datos.filterbyRole(alfabeticlist, rolevalue);
-    
+
     let dificultList = [];
     dificultList = datos.filterbyDificult(rolelist, dificultvalue);
     fillDashboard(dificultList);
@@ -49,6 +54,7 @@ function joinedFilter() {
 
 
 buscardor.addEventListener('keyup', findName);
+
 function findName() {
     let finalList = [];
     let stringName = buscardor.value;
@@ -58,34 +64,40 @@ function findName() {
 }
 
 aToz.addEventListener('click', ordenardeaz);
+
 function ordenardeaz() {
     orderlabel.innerHTML = 'Ordenar: A-Z';
     joinedFilter()
 }
 zToa.addEventListener('click', ordenardeza);
+
 function ordenardeza() {
     orderlabel.innerHTML = 'Ordenar: Z-A';
     joinedFilter()
 }
 
 allrole.addEventListener('click', rolefilterall);
+
 function rolefilterall() {
     roleOrder.innerHTML = 'Todos los Roles';
     joinedFilter()
 }
 alldificult.addEventListener('click', dificultfiltertodos);
+
 function dificultfiltertodos() {
     dificultlabel.innerHTML = 'Todas las Dificultades';
     joinedFilter()
 }
 
 tankfilter.addEventListener('click', rolefiltertank);
+
 function rolefiltertank() {
     roleOrder.innerHTML = 'Tank';
     joinedFilter()
 }
 
 fightfilter.addEventListener('click', rolefilterfighter);
+
 function rolefilterfighter() {
     roleOrder.innerHTML = 'Fighter';
     joinedFilter();
@@ -93,12 +105,14 @@ function rolefilterfighter() {
 
 
 supportfilter.addEventListener('click', rolefiltersupport);
+
 function rolefiltersupport() {
     roleOrder.innerHTML = 'Support';
     joinedFilter();
 }
 
 magefilter.addEventListener('click', rolefiltermage);
+
 function rolefiltermage() {
     roleOrder.innerHTML = 'Mage';
     joinedFilter();
@@ -106,6 +120,7 @@ function rolefiltermage() {
 }
 
 assasinfilter.addEventListener('click', rolefilterassasin);
+
 function rolefilterassasin() {
     roleOrder.innerHTML = 'Assassin';
     joinedFilter();
@@ -113,12 +128,14 @@ function rolefilterassasin() {
 }
 
 marksmanfilter.addEventListener('click', rolefiltermarksman);
+
 function rolefiltermarksman() {
     roleOrder.innerHTML = 'Marksman';
     joinedFilter();
 }
 
 hardfilter.addEventListener('click', dificultfilterHard);
+
 function dificultfilterHard() {
     dificultlabel.innerHTML = 'Dificultad: Hard';
     joinedFilter();
@@ -126,6 +143,7 @@ function dificultfilterHard() {
 
 
 averagefilter.addEventListener('click', dificultfilterAverage);
+
 function dificultfilterAverage() {
     dificultlabel.innerHTML = 'Dificultad: Average';
     joinedFilter();
@@ -133,6 +151,7 @@ function dificultfilterAverage() {
 
 
 easyfilter.addEventListener('click', dificultfilterEasy);
+
 function dificultfilterEasy() {
     dificultlabel.innerHTML = 'Dificultad: Easy';
     joinedFilter();
@@ -152,7 +171,7 @@ function fillDashboard(desiredList) {
         let div = document.createElement('a');
         div.className = 'tarjeta';
         div.id = element.name;
-        div.href = 'vista.html?'+element.name;  
+        div.href = 'vista.html?' + element.name;
 
         let img = document.createElement('img');
         img.src = element.image;
@@ -175,9 +194,9 @@ window.onload = function allChamps() {
         let div = document.createElement('a');
         div.className = 'tarjeta';
         div.id = element.name;
-        div.href = 'vista.html?'+element.name;  
-  
-        
+        div.href = 'vista.html?' + element.name;
+
+
 
         let img = document.createElement('img');
         img.src = element.image;
